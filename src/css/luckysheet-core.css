@@ -1692,6 +1692,7 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -663px -13px;
     width: 15px;
     padding-left: 1px;
@@ -1704,14 +1705,17 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment:hover {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -395px -62px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:increment:active {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -679px -13px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:decrement {
+    display: none;
     border-left: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
     background: no-repeat url("waffle_sprite.png") -283px -62px;
@@ -1720,14 +1724,17 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:hover {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -145px -70px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:horizontal:active {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -552px 0;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment {
+    display: none;
     padding-top: 1px;
     background: no-repeat url("waffle_sprite.png") -531px -24px;
     border-left: 1px solid #d9d9d9;
@@ -1735,14 +1742,17 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment:hover {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -570px -42px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:increment:active {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -83px -46px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement {
+    display: none;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     border-left: 1px solid #d9d9d9;
@@ -1751,10 +1761,12 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement:hover {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -180px -58px;
 }
 
 .luckysheet-scrollbar-ltr::-webkit-scrollbar-button:vertical:decrement:active {
+    display: none;
     background: no-repeat url("waffle_sprite.png") -776px -28px;
 }
 
@@ -2200,40 +2212,40 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
 }
 
 .luckysheet-scrollbars::-webkit-scrollbar-track {
-    background-color: #ffffff;
-    border: 1px solid #d9d9d9;
+    /* background-color: #ffffff; */
+    /* border: 1px solid #d9d9d9; */
 }
 
 .luckysheet-scrollbar-x::-webkit-scrollbar-track {
-    border-left: 1px solid #d9d9d9;
-    border-right: none;
+    /* border-left: 1px solid #d9d9d9; */
+    /* border-right: none; */
 }
 
 .luckysheet-scrollbar-y::-webkit-scrollbar-track {
-    border-top: none;
-    border-bottom: none;
+    /* border-top: none; */
+    /* border-bottom: none; */
 }
 
 .luckysheet-scrollbars::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-color: #ffffff;
-    /*border:0 none;*/
+    border: none;
 }
 
 .luckysheet-scrollbars::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
-    background-clip: padding-box;
-    border: solid transparent;
-    border-radius: 12px;
-    border-width: 2px 1px 1px 2px;
-    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+    /* background-clip: padding-box; */
+    /* border: solid transparent; */
+    border-radius: 8px;
+    /* border-width: 2px 1px 1px 2px; */
+    /* box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07); */
 }
 
 .luckysheet-scrollbars::-webkit-scrollbar-thumb:hover {
-    background-color: #969696;
-    border: 1px solid #a0a0a0;
-    border-radius: 12px;
+    /* background-color: #969696; */
+    /* border: 1px solid #a0a0a0; */
+    /* border-radius: 12px; */
 }
 
 .luckysheet-grdusedrange {

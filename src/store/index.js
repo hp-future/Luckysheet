@@ -24,7 +24,7 @@ const Store = {
     calculatebarHeight: 0,
     rowHeaderWidth: 46,
     columnHeaderHeight: 20,
-    cellMainSrollBarSize: 12,
+    cellMainSrollBarSize: 8,
     sheetBarHeight: 29,
     statisticBarHeight: 23,
     luckysheetTableContentHW: [0, 0], 

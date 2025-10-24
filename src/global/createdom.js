@@ -101,7 +101,7 @@ export default function luckysheetcreatedom(colwidth, rowheight, data, menu, tit
     $("#" + Store.container).append(gh);
 
     $("#luckysheet-scrollbar-x div").width(Store.ch_width);
-    $("#luckysheet-scrollbar-y div").height(Store.rh_height + Store.columnHeaderHeight - Store.cellMainSrollBarSize - 3);
+    $("#luckysheet-scrollbar-y div").height(Store.rh_height + Store.columnHeaderHeight - Store.cellMainSrollBarSize - 2);
 
     //新建行菜单
     $("body").append(maskHTML);
