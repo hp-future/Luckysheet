@@ -1817,6 +1817,29 @@ body:not(.ewa-ipad) .luckysheet-rows-h-cell-sel:hover {
     left: 0px;
     z-index: 1000;
 }
+.luckysheet-bottom-controll-row button {
+    height: 24px;
+    line-height: 24px;
+}
+.luckysheet-bottom-controll-row button:focus,
+.luckysheet-bottom-controll-row button:active,
+.luckysheet-bottom-controll-row button:focus:active {
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.luckysheet-bottom-controll-row button#luckysheet-bottom-add-row,
+.luckysheet-bottom-controll-row button#luckysheet-bottom-bottom-top {
+    padding: 0 10px;
+}
+.luckysheet-bottom-controll-row input {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 4px;
+    border-color: #ccc;
+    border-radius: 2px;
+}
 
 #luckysheet-bottom-add-row {
     padding: 5px 20px;
