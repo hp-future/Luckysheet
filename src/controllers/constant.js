@@ -233,7 +233,7 @@ const gridHTML = function() {
                                     </tbody> 
                                 </table> 
                             </div> 
-                            <div class="luckysheet-sheet-area luckysheet-noselected-text" id="luckysheet-sheet-area">
+                            <div class="luckysheet-sheet-area luckysheet-noselected-text" id="luckysheet-sheet-area" style="${Store.sheetBarHeight}px">
                                 <div id="luckysheet-sheet-content">
                                     <div id="luckysheet-sheets-add" class="luckysheet-sheets-add lucky-button-custom"><i class="iconfont-luckysheet luckysheet-iconfont-jia1"></i></div>
                                     <div id="luckysheet-sheets-m" class="luckysheet-sheets-m lucky-button-custom"><i class="iconfont-luckysheet luckysheet-iconfont-caidan2"></i></div>
