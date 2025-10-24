@@ -120,7 +120,7 @@ function showsheetconfigmenu() {
     }
 
     setTimeout(function(){
-        mouseclickposition($("#luckysheet-rightclick-sheet-menu"), luckysheetcurrentSheetitem.offset().left + luckysheetcurrentSheetitem.width(), luckysheetcurrentSheetitem.offset().top - 18, "leftbottom");
+        mouseclickposition($("#luckysheet-rightclick-sheet-menu"), luckysheetcurrentSheetitem.offset().left, luckysheetcurrentSheetitem.offset().top - 18, "leftbottom");
     },1);
 }
 
@@ -557,7 +557,8 @@ export function initialSheetBar(){
         let $t = $("#luckysheet-sheet-list");
 
         let left = $(this).offset().left - $('#' + Store.container).offset().left;
-        let bottom = $(this).height() + $('#luckysheet-sta-content').height() + 12;
+        const staHeight = $('#luckysheet-sta-content').is(':visible') ? $('#luckysheet-sta-content').height() : 0
+        let bottom = $(this).height() + staHeight + 12;
         $t.css({left: left + 'px', bottom: bottom + 'px'}).show();
         $("#luckysheet-input-box").removeAttr("style");
     });
