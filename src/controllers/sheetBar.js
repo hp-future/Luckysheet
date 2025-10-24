@@ -237,10 +237,10 @@ export function initialSheetBar(){
         }
     }).on("click", "div.luckysheet-sheets-item", function (e) {
 
-        if(isEditMode()){
-            // alert("非编辑模式下不允许该操作！");
-            return;
-        }
+        // if(isEditMode()){
+        //     // alert("非编辑模式下不允许该操作！");
+        //     return;
+        // }
 
         let $t = $(this), $cur = $(e.target);
         luckysheetsheetrightclick($t, $cur, e);
@@ -530,13 +530,16 @@ export function initialSheetBar(){
         if (initialOpenSheet) {
             $("#" + Store.container).append(replaceHtml(sheetselectlistHTML, { "item": item }));
             $("#luckysheet-sheet-list").on("click", ".luckysheet-cols-menuitem", function (e) {
+                let $item = $(this), index = $item.data("index");
                 if(isEditMode()){
-                    // tooltip.info("提示", "图表编辑模式下不允许该操作！");
-                    alert(locale_sheetconfig.chartEditNoOpt);
+                    if ($item.data("index") != Store.currentSheetIndex) {
+                        sheetmanage.changeSheetExec(index)
+                        sheetmanage.locationSheet();
+                    }
+                    server.keepHighLightBox()
                     return;
                 }
 
-                let $item = $(this), index = $item.data("index");
 
                 if ($item.data("index") != Store.currentSheetIndex) {
                     sheetmanage.setSheetShow(index);
